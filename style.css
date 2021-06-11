@@ -4,7 +4,9 @@ body{
     background-color: rgb(238, 234, 227);
 }
 .navbar{
+    position:absolute;
     display: flex;
+    width:100%;
     justify-content: center;
     text-align: center;
     background-color: darkgrey;
