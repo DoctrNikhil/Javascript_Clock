@@ -3,6 +3,18 @@
 body{
     background-color: rgb(238, 234, 227);
 }
+.pop-up{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width:50vh;
+    text-align: center;
+    background-color: coral;
+    border:5px solid black;
+    font-size: x-large;
+}
+
 .navbar{
     position:absolute;
     display: flex;
@@ -39,7 +51,7 @@ body{
 }
 
 .analog-clock{
-    display: initial;
+    display: none;
     width:40vh;
     height:40vh;
 
