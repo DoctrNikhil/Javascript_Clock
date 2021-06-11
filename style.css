@@ -2,6 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 body{
     background-color: rgb(238, 234, 227);
+    margin:0;
+    padding:0;
 }
 .pop-up{
     position: absolute;
@@ -14,6 +16,11 @@ body{
     border:5px solid black;
     font-size: x-large;
 }
+.pop-up button{
+    font-size: x-large;
+    margin:1vh 1vh;
+    margin-bottom: 2vh;
+}
 
 .navbar{
     position:absolute;
@@ -22,11 +29,13 @@ body{
     justify-content: center;
     text-align: center;
     background-color: darkgrey;
+    padding:1vh 0;
 }
 .navbar button{
     margin:0 1rem;
     box-sizing: border-box;
     background-color: rgb(118, 136, 88);
+    font-size:x-large;
 }
 
 .clock-wrapper{
