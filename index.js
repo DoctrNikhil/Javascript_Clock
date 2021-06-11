@@ -41,13 +41,9 @@ function setClock(){
     min = (min < 10 ? "0" : "") + min;
     sec = (sec < 10 ? "0" : "") + sec;
     
-
+    clock.innerHTML = hour+":"+min+":"+sec+" "+ampm;
     // This is checkpoint which checks analog clock is selected or digitel clock
-    if(!is_clock_analog)
-    {
-        clock.innerHTML = hour+":"+min+":"+sec+" "+ampm;
-        return;
-    }
+    
     // Here analog clock is set
     hourDegree = hour/12 * 360 + min/60 * 360/12 - 90  ;
     minuteDegree = min/60 * 360 + sec/60 * 360/60 - 90 ;
@@ -55,7 +51,11 @@ function setClock(){
     hourTail.style.transform = 'rotate('+ hourDegree +'deg)';
     minuteTail.style.transform = 'rotate('+ minuteDegree +'deg)';
     secondTail.style.transform = 'rotate('+ secondDegree +'deg)';
-    analogClock_sound.play();
+    if(is_clock_analog)
+    {
+        analogClock_sound.play();
+    }
+    
 }
 
 
